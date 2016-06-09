@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Self Assessment</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body class="container" class="container" ng-app="app" ng-controller="mainController as main">
+<table class="table">
+    <tbody>
+    <tr ng-repeat="(key, val) in main.array">
+        <td>{{key}}:</td>
+        <td ng-repeat="data in val">
+            {{data}}
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
